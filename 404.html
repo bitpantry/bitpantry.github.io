@@ -49,9 +49,28 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
+            width: 64px;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
             margin-bottom: 24px;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        .header-text h1 {
+            margin-bottom: 0;
+        }
+
+        .header-text .subtitle {
+            margin-bottom: 0;
         }
 
         .app-store-badge {
@@ -92,9 +111,13 @@
 
 <body>
     <div class="container share-landing" id="share-landing">
-        <img src="/tabs-memory/images/tabs_mono.png" alt="Tabs Memory" class="logo">
-        <h1>Tabs Memory</h1>
-        <p class="subtitle">Scripture Memory Made Simple</p>
+        <div class="header">
+            <img src="/tabs-memory/images/tabs_mono.png" alt="Tabs Memory" class="logo">
+            <div class="header-text">
+                <h1>Tabs Memory</h1>
+                <p class="subtitle">Scripture Memory Made Simple</p>
+            </div>
+        </div>
 
         <p>
             Someone shared a verse or card with you from Tabs Memory — a scripture memorization app

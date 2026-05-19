@@ -114,18 +114,41 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 16px;
+            width: 64px;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        .header-text h1 {
+            margin-bottom: 0;
+        }
+
+        .header-text .subtitle {
+            margin-bottom: 0;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="images/tabs_mono.png" alt="Tabs Memory" class="logo">
-        <h1>Tabs Memory</h1>
-        <p class="subtitle">Scripture Memory Made Simple</p>
+        <div class="header">
+            <img src="images/tabs_mono.png" alt="Tabs Memory" class="logo">
+            <div class="header-text">
+                <h1>Tabs Memory</h1>
+                <p class="subtitle">Scripture Memory Made Simple</p>
+            </div>
+        </div>
 
         <p>
             Tabs Memory uses a time-tested tab system to help you hide God's Word in your heart.
